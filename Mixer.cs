@@ -11,6 +11,37 @@ namespace MixInStyle
         {
             InitializeComponent();
             PopulateMixer();
+            if (Environment.GetCommandLineArgs().Count() == 2)
+            {
+                Cursor = Cursors.WaitCursor;
+                try
+                {
+                    var p = (Preset)(new BinaryFormatter().Deserialize(new FileStream(Environment.GetCommandLineArgs()[1], FileMode.Open)));
+                    bool missing = false;
+                    for (int i = 0; i < p.Count; i++)
+                    {
+                        var h = (Channel)(channelPanel.Controls[i]);
+                        h.inputSelector.SelectedItem = p[i].Item1;
+                        h.outputSelector.SelectedItem = p[i].Item2;
+                        h.volKnob.Value = p[i].Item3;
+
+                        if ((h.inputSelector.SelectedItem != p[i].Item1 && h.inputSelector.SelectedItem == null) ||
+                        (h.outputSelector.SelectedItem != p[i].Item2 && h.outputSelector.SelectedItem == null))
+                        {
+                            missing = true;
+                        }
+                    }
+                    if (missing)
+                    {
+                        MessageBox.Show("The opened preset uses devices which are unavailable or has been disconnected", "Unavailable/Disconnected Devices", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("The opened preset is corrupted", "Bad Preset", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                Cursor = Cursors.Default;
+            }
         }
 
 
