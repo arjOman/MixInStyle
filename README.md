@@ -21,7 +21,7 @@ MixInStyle is a free <i>cross-device</i> <a href="https://github.com/naudio/NAud
 ### Features at a glance
 
  - **Multi-Device** Audio I/O
- - Use single device twice as **many** times
+ - Use a single device as many times as you want
  - Record **multiple devices** at once
  - Functional Volume Knob
  - **100** Functional Channels
