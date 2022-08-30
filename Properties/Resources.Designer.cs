@@ -59,5 +59,15 @@ namespace MixInStyle.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MixInStyle {
+            get {
+                object obj = ResourceManager.GetObject("MixInStyle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
