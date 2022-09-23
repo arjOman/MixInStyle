@@ -4,7 +4,7 @@
 <img src="https://lh3.googleusercontent.com/0k0r3hQO_0ds7Xlg4QO_FT8fzcVQ3nIo04so9oVNBTkUfBOQQUT478FyAnpQ6qwQoZKY2862-F02qF7wePEk_ujs_3IkLlleSyhoVHBH4AtFmbbqEHFK3q5HcvHd7DL9syYr34Fnbg=w2400" alt="drawing" width="120"/>
 <br>
 
-MixInStyle is a free <i>cross-device</i> <a href="https://github.com/naudio/NAudio">NAudio</a> based Windwos Audio Mixer. With MixInStyle, You can route any input device to any output device, and at the same time, record all of them without needing to buy a *Hardware Mixer*. You can use any **recognizable** audio device with MixInStyle, or use it with your own pipeline to match your scale.
+MixInStyle is a free <i>cross-device</i> <a href="https://github.com/naudio/NAudio">NAudio</a> based Windows Audio Mixer. With MixInStyle, You can route any input device to any output device, and at the same time, record all of them without needing to buy a *Hardware Mixer*. You can use any **recognizable** audio device with MixInStyle, or use it with your own pipeline to match your scale.
 
 <img src="https://lh3.googleusercontent.com/w6p3BBCD02-jDQg2eUTrxIutGZlf3F47FycCgv13IIItiihCBolQRcuZYEqTFEzakTIkq-dp8JYlXn1YArNXkBuRCLyA6xWlDWxoaodGCE2OfZozGqCrTcGUbxt3Ywbs3yr24Cl17Q=w2400"/>
 
